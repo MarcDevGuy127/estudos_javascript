@@ -84,3 +84,11 @@ function FuncaoCalculaFahrenheit(celsius) {
     return fahrenheit;
 }
 console.log("Convertendo para °F é ", FuncaoCalculaFahrenheit(celsius));
+
+//Exercise 6 - Solicite um número e exiba a tabuada dele de 1 a 10.
+const numTabuada = parseFloat(prompt("Digite um número para calcular tabuada:"));
+let i = 0;
+while (i++ < 10) { //incremento com contador
+    var resultado = numTabuada * i;
+    console.log(`${numTabuada} * ${i} = ${resultado}`);
+}
