@@ -92,3 +92,13 @@ while (i++ < 10) { //incremento com contador
     var resultado = numTabuada * i;
     console.log(`${numTabuada} * ${i} = ${resultado}`);
 }
+
+//Exercise 7 - Crie uma função que recebe uma string e retorna a quantidade de vogais (a, e, i, o, u) nela.
+const texto = prompt("Escreva uma palavra:");
+let contadorDeVogais = 0;
+for (let i = 0; i < texto.length; i++) {
+    if ("aeiou".includes(texto[i].toLowerCase())) {
+        contadorDeVogais++;
+    }
+}
+console.log(`Número de vogais: ${contadorDeVogais}`);
