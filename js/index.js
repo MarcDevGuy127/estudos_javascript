@@ -114,4 +114,21 @@ function FuncaoInverter() {
     return inverso;
 }
 
-console.log(FuncaoInverter()); 
+console.log(FuncaoInverter());
+
+//Exercise 9 - Gere os primeiros 10 números da sequência de Fibonacci.
+let fibonacci = [0, 1]; // Inicializa com os dois primeiros números da sequência
+let sum = 0;
+
+function FuncaoSequenciaFibonacci() {
+    for (let i = 2; i <= 10; i++) {
+        fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2]; // Soma dos dois números anteriores
+    }
+    for (let i = 0; i < fibonacci.length; i++) { // Substituindo o forEach por um loop for
+        sum += fibonacci[i]; // Soma todos os valores da sequência
+    }
+    console.log(`Sequência Fibonacci: ${fibonacci}`);
+    console.log(`Soma dos números da sequência: ${sum}`);
+    return sum; // Retorna a soma total
+}
+console.log(FuncaoSequenciaFibonacci());
