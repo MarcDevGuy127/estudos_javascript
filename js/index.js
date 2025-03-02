@@ -75,3 +75,12 @@ if (numero % 2 == 0) {
    } else {
     console.log("Esse número não é par!");
 }
+
+//Exercise 5 - Escreva um programa que converte uma temperatura de Celsius para Fahrenheit.
+let celsius = parseFloat(prompt("Digite um valor de temperatura em °C"));
+
+function FuncaoCalculaFahrenheit(celsius) {
+    var fahrenheit = (celsius*1.8)+32;
+    return fahrenheit;
+}
+console.log("Convertendo para °F é ", FuncaoCalculaFahrenheit(celsius));
