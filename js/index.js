@@ -1,7 +1,7 @@
-//Exercise 1
+//Exercise 1 - Escreva um script que imprime "Olá, Mundo!" no console.
 console.log("Hello World!");
 
-//Exercise 2
+//Exercise 2 - Declare três variáveis: uma string, um número e um booleano, e imprima seus valores.
 var a = "Hello";
 var b = 12;
 var c = true;
@@ -43,6 +43,7 @@ rl.question("Digite um número: ", (num1) => {
 
  */
 
+//Exercise 3 - Crie um programa que recebe dois números e exibe a soma, subtração, multiplicação e divisão deles.
 const x = parseFloat(prompt("Digite um número"));
 const y = parseFloat(prompt("Digite outro número"));
 
@@ -66,3 +67,11 @@ console.log("Soma:",FuncSoma(x,y));
 console.log("Subtração:",FuncSubtracao(x,y));
 console.log("Divisão:",FuncDivisao(x,y));
 console.log("Multiplicação:",FuncMultiplicacao(x,y));
+
+//Exercise 4 - Peça um número ao usuário e informe se ele é par ou ímpar.
+let numero = parseFloat(prompt("Digite um número para saber se é par ou ímpar"));
+if (numero % 2 == 0) {
+   console.log("Esse número é par!");
+   } else {
+    console.log("Esse número não é par!");
+}
