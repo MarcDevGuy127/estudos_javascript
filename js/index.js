@@ -97,8 +97,21 @@ while (i++ < 10) { //incremento com contador
 const texto = prompt("Escreva uma palavra:");
 let contadorDeVogais = 0;
 for (let i = 0; i < texto.length; i++) {
-    if ("aeiou".includes(texto[i].toLowerCase())) {
+    if ("aeiou".includes(texto[i].toLowerCase())) {//revisar
         contadorDeVogais++;
     }
 }
 console.log(`Número de vogais: ${contadorDeVogais}`);
+
+//Exercise 8 - Faça uma função que recebe uma palavra e retorna a mesma palavra invertida.
+const palavra = prompt("Escreva uma palavra para inverter");
+let inverso = "";
+
+function FuncaoInverter() {
+    for (let i = palavra.length - 1; i >= 0; i--) { // Começa no último índice
+        inverso += palavra[i]; // Adiciona o caractere ao resultado
+    }
+    return inverso;
+}
+
+console.log(FuncaoInverter()); 
