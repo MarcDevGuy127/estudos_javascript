@@ -124,7 +124,7 @@ function FuncaoSequenciaFibonacci() {
     for (let i = 2; i <= 10; i++) {
         fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2]; // Soma dos dois números anteriores
     }
-    for (let i = 0; i < fibonacci.length; i++) { // Substituindo o forEach por um loop for
+    for (let i = 0; i < fibonacci.length; i++) {
         sum += fibonacci[i]; // Soma todos os valores da sequência
     }
     console.log(`Sequência Fibonacci: ${fibonacci}`);
@@ -132,3 +132,34 @@ function FuncaoSequenciaFibonacci() {
     return sum; // Retorna a soma total
 }
 console.log(FuncaoSequenciaFibonacci());
+
+//Exercise 10 - Escreva um programa que verifica se um número fornecido pelo usuário é primo.
+let valor1 = Number(prompt("Digite um número para saber se ele é primo: ")); // Convertendo para número
+let ehPrimo = true; // Variável para armazenar o resultado
+
+if (valor1 < 2) {
+    console.log(`O número ${valor1} não é primo!`);
+} else {
+    for (let i = 2; i < valor1; i++) {
+        if (valor1 % i === 0) { // Se for divisível, não é primo
+            ehPrimo = false;
+            break; // Para o loop assim que encontrar um divisor
+        }
+    }
+    if (ehPrimo) {
+        console.log(`O número ${valor1} é primo!`);
+    } else {
+        console.log(`O número ${valor1} não é primo!`);
+    }
+} //Revisar 7 8 9 10
+
+//Peça ao usuário uma lista de números separados por vírgula e exiba-os em ordem crescente.
+const numeros = [];
+
+/**
+ * let index = 10;
+for (let index = 0; numeros < index.length; index++) {
+    const numeros = numeros[index];
+    console.log(`${numeros}`);
+}
+ */
