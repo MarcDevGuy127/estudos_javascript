@@ -153,7 +153,7 @@ if (valor1 < 2) {
     }
 } //Revisar 7 8 9 10
 
-//Peça ao usuário uma lista de números separados por vírgula e exiba-os em ordem crescente.
+//Exercise 11 - Peça ao usuário uma lista de números separados por vírgula e exiba-os em ordem crescente.
 const numeros = [];
 
 /**
