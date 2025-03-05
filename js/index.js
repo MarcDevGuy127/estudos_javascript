@@ -154,12 +154,17 @@ if (valor1 < 2) {
 } //Revisar 7 8 9 10
 
 //Exercise 11 - Peça ao usuário uma lista de números separados por vírgula e exiba-os em ordem crescente.
-const numeros = [];
+// Step 1: Request input from the user
+let userInput = prompt("Enter a list of numbers separated by commas (e.g., 5, 3, 8, 1):");
 
-/**
- * let index = 10;
-for (let index = 0; numeros < index.length; index++) {
-    const numeros = numeros[index];
-    console.log(`${numeros}`);
-}
- */
+// Step 2: Split the input string into an array of strings
+let stringArray = userInput.split(',');
+
+// Step 3: Convert the array of strings to an array of numbers
+let numberArray = stringArray.map(Number);
+
+// Step 4: Sort the array in descending order
+numberArray.sort((a, b) => b - a);
+
+// Step 5: Display the sorted array
+console.log("Sorted numbers from highest to lowest:", numberArray);
