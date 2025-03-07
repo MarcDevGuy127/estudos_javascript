@@ -168,3 +168,57 @@ numberArray.sort((a, b) => b - a);
 
 // Step 5: Display the sorted array
 console.log("Sorted numbers from highest to lowest:", numberArray);
+
+
+//Conteúdo Extra
+const string = "Hello, World!";
+
+console.log(`%\0, ${string}`);  // Null character (não visível)
+console.log(`%', ${string}`);   // Aspas simples (não precisa escapar)
+console.log(`%", ${string}`);   // Aspas duplas (não precisa escapar)
+console.log(`%\\, ${string}`);  // Backslash (precisa de um escape duplo)
+console.log(`%\n, ${string}`);  // Nova linha
+console.log(`%\r, ${string}`);  // Retorno de carro
+console.log(`%\v, ${string}`);  // Tab vertical (pode não ser visível)
+console.log(`%\t, ${string}`);  // Tab
+console.log(`%\b, ${string}`);  // Backspace (pode não ser visível)
+console.log(`%\f, ${string}`);  // Form feed (pode não ser visível)
+
+//Utilizando método charAt para acessar um caractere
+var textoo = "Brave new world";
+console.log(textoo.charAt(1)); // returns "a"
+
+//Tratando string como um objeto Array para acessar um caractere
+console.log("cat"[1]); // returns "a"
+
+//Lista 2
+//Exercise 1 - Crie uma função que recebe uma string e uma letra e retorna quantas vezes essa letra aparece na string.
+const palavraUsuario = prompt("Digite uma palavra para contar vogais:");
+function FuncContaLetra(palavraUsuario) {
+    let count = 0;
+    for (let i = 0; i < palavraUsuario.length; i++) {
+        if ("aeiou".includes(palavraUsuario[i].toLowerCase())) {
+            count++;
+        }
+    }
+    return count;
+}
+console.log("Número de vogais:", FuncContaLetra(palavraUsuario));
+/**
+ * //comparando strings
+var stringa = "a";
+var stringb = "b";
+if (stringa < stringb)
+  // verdadeiro
+  console.log(stringa + " é menor que " + stringb);
+else if (stringa > stringb) console.log(stringa + " é maior que " + stringb);
+else console.log(stringa + " e " + stringb + " são iguais.");
+
+//Distinção entre string primitivas e objetos String
+var s_prim = "foo";
+var s_obj = new String(s_prim);
+
+console.log(typeof s_prim); // Loga "string"
+console.log(typeof s_obj); // Loga "object"
+
+ */
