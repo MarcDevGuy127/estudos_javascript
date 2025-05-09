@@ -24,3 +24,20 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
+.enunciados {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border: 2px solid #333;
+    margin: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    margin: 10px 0;
+}
