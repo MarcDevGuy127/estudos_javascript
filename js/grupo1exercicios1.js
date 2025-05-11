@@ -6,15 +6,18 @@ Grupo 1 - Sequências Simples
 const valorMetros = parseFloat(prompt("Digite um valor em metros para converter em decímetros, centímetros e milímetros?"));
 
 function CalcDecimetros(valorMetros) {
-    return valorMetros * 10;
+    var decimetros = valorMetros * 10; 
+    return decimetros;
 }
 
 function CalcCentimetros(valorMetros) {
-    return valorMetros * 100;
+    var centimetros = valorMetros * 100;
+    return centimetros;
 }
 
 function CalcMilimetros(valorMetros) {
-    return valorMetros * 1000;
+    var milimetros =  valorMetros * 1000;
+    return milimetros;
 }
 
 console.log("Decímetros:", CalcDecimetros(valorMetros));
