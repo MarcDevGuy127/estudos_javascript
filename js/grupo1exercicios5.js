@@ -8,18 +8,11 @@ Grupo 1 - Sequências Simples
         e) O seno da diferença do primeiro.
 */
 
-function somaValores(a,b) {
-    let resultado = a + b;
-    return resultado;
-}
+const pNum = parseFloat(prompt("Digite um número:"));
+const sNum = parseFloat(prompt("Digite um outro número:"));
 
 function calculaProduto(a,b) {
     let resultado = a * Math.pow(b, 2);
-    return resultado;
-}
-
-function numQuadrado(a) {
-    let resultado = Math.pow(a, 2);
     return resultado;
 }
 
@@ -29,16 +22,13 @@ function somaQuadrados(a,b) {
 }
 
 function senoDiferenca(a,b) {
-    let resultado = Math.sin(pNum - sNum);
+    let resultado = Math.sin(a - b);
     return resultado;
 }
 
-const pNum = parseFloat(prompt("Digite um número:"));
-const sNum = parseFloat(prompt("Digite um outro número:"));
-
 console.log(`${pNum} ${sNum}`);
-console.log(`a) ${somaValores(pNum,sNum)}`);
+console.log(`a) ${pNum+sNum}`);
 console.log(`b) ${calculaProduto(pNum,sNum)}`);
-console.log(`c) ${numQuadrado(pNum)}`);
+console.log(`c) ${Math.pow(pNum, 2)}`);
 console.log(`d) ${somaQuadrados(pNum,sNum)}`);
 console.log(`e) ${senoDiferenca(pNum,sNum)}`);
