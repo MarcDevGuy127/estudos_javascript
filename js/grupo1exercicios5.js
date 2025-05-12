@@ -8,12 +8,37 @@ Grupo 1 - Sequências Simples
         e) O seno da diferença do primeiro.
 */
 
+function somaValores(a,b) {
+    let resultado = a + b;
+    return resultado;
+}
+
+function calculaProduto(a,b) {
+    let resultado = a * Math.pow(b, 2);
+    return resultado;
+}
+
+function numQuadrado(a) {
+    let resultado = Math.pow(a, 2);
+    return resultado;
+}
+
+function somaQuadrados(a,b) {
+    let resultado = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+    return resultado;
+}
+
+function senoDiferenca(a,b) {
+    let resultado = Math.sin(pNum - sNum);
+    return resultado;
+}
+
 const pNum = parseFloat(prompt("Digite um número:"));
 const sNum = parseFloat(prompt("Digite um outro número:"));
 
-//console.log(`${pNum} + ${pNum}: ${pNum+sNum}`);
-console.log(`a) ${pNum} + ${sNum}:`, pNum+sNum);
-console.log(`b) ${pNum * Math.pow(sNum, 2)}`);
-console.log(`c) ${Math.pow(pNum, 2)}`);
-console.log(`d) ${Math.sqrt(Math.pow(pNum, 2) + Math.pow(sNum, 2))}`);
-console.log(`e) ${Math.sin(pNum - sNum)}`);
+console.log(`${pNum} ${sNum}`);
+console.log(`a) ${somaValores(pNum,sNum)}`);
+console.log(`b) ${calculaProduto(pNum,sNum)}`);
+console.log(`c) ${numQuadrado(pNum)}`);
+console.log(`d) ${somaQuadrados(pNum,sNum)}`);
+console.log(`e) ${senoDiferenca(pNum,sNum)}`);
