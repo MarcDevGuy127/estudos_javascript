@@ -5,15 +5,13 @@ Grupo 2 - Controle de Fluxo
 */
 
 const produto = parseFloat(prompt("Digite o preço de um produto:"));
-
+console.log("\n Preço do produto:", produto);
 if (produto < 100) {
-    let valorInflado = produto * 0.1;
-    let inflacao = produto + valorInflado;
+    let inflacao = produto + (produto * 0.1);
     console.log("Inflação 10%:", inflacao);
 }
 
 if (produto >= 100) {
-    let valorInflado = produto * 0.2;
-    let inflacao = produto + valorInflado;
+    let inflacao = produto + (produto * 0.2);
     console.log("Inflação 20%:", inflacao); 
 }
