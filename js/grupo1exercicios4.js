@@ -5,11 +5,14 @@ imprime no vídeo o correspondente em graus Celsius. Usar uma variável
 double para ler o valor em Fahrenheit e a fórmula:
 C = (F - 32.0) * (5.0 / 9.0).*/
 
-const valorFahrenheit = parseFloat(prompt("Digite um valor em Fahrenheit para converter em Celsius"));
+function executarGrupo1Exercicio4() { //funcao para botao
 
-function ConverteCelsius(valorFahrenheit) {
-    let valorCelsius = (valorFahrenheit - 32.0) * (5.0 / 9.0);
-    return valorCelsius;
+    const valorFahrenheit = parseFloat(prompt("Digite um valor em Fahrenheit para converter em Celsius"));
+
+    function ConverteCelsius(valorFahrenheit) {
+        let valorCelsius = (valorFahrenheit - 32.0) * (5.0 / 9.0);
+        return valorCelsius;
+    }
+
+    console.log(`${valorFahrenheit}°F => ${ConverteCelsius(valorFahrenheit)}°C`);
 }
-
-console.log(`${valorFahrenheit}°F => ${ConverteCelsius(valorFahrenheit)}°C`);

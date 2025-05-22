@@ -4,6 +4,9 @@ Grupo 3 - Funções
     f(x, n) = x
 */
 
-const x = parseFloat(prompt("Digite um valor real:"));
-const n = parseInt(prompt("Digite a potência:"));
-alert(`${x}^${n} = ${Math.pow(x, n)}`); 
+function executarGrupo3Exercicio1() { //funcao para botao
+
+    const x = parseFloat(prompt("Digite um valor real:"));
+    const n = parseInt(prompt("Digite a potência:"));
+    alert(`${x}^${n} = ${Math.pow(x, n)}`);
+}

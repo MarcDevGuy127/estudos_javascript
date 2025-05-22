@@ -7,22 +7,25 @@ Grupo 2 - Controle de Fluxo
     da primeira prova.
 */
 
-const totalAlunos = parseInt(prompt("Informe a quantidade de alunos na turma:"));
+function executarGrupo2Exercicio5() { //funcao para botao
 
-for (let i = 0; i < totalAlunos; i++) {
-    let nomeAluno = prompt("Informe o nome do estudante:");
-    let primeiraNota = parseFloat(prompt("Informe a primeira nota:"));
-    let segundaNota = parseFloat(prompt("Informe a segunda nota:"));
+    const totalAlunos = parseInt(prompt("Informe a quantidade de alunos na turma:"));
 
-    if (primeiraNota === 50) break;
+    for (let i = 0; i < totalAlunos; i++) {
+        let nomeAluno = prompt("Informe o nome do estudante:");
+        let primeiraNota = parseFloat(prompt("Informe a primeira nota:"));
+        let segundaNota = parseFloat(prompt("Informe a segunda nota:"));
 
-    if (primeiraNota > 10 || segundaNota > 10) {
-        alert("Nota inválida! Insira um valor entre 0 e 10.");
-        i--; // volta/retrocede um passo no loop para corrigir/repreencher.
-        continue; // continue: pula a execução do código restante na iteração atual e avançar para a próxima iteração.
+        if (primeiraNota === 50) break;
+
+        if (primeiraNota > 10 || segundaNota > 10) {
+            alert("Nota inválida! Insira um valor entre 0 e 10.");
+            i--; // volta/retrocede um passo no loop para corrigir/repreencher.
+            continue; // continue: pula a execução do código restante na iteração atual e avançar para a próxima iteração.
+        }
+
+        let media = (primeiraNota + segundaNota) / 2;
+
+        alert(`Estudante: ${nomeAluno} \n 1° Prova: ${primeiraNota} \n 2° Prova: ${segundaNota} \n Média: ${media}`);
     }
-
-    let media = (primeiraNota + segundaNota) / 2;
-
-    alert(`Estudante: ${nomeAluno} \n 1° Prova: ${primeiraNota} \n 2° Prova: ${segundaNota} \n Média: ${media}`);
 }

@@ -4,14 +4,17 @@ Grupo 2 - Controle de Fluxo
     for maior ou igual a 100.
 */
 
-const produto = parseFloat(prompt("Digite o preço de um produto:"));
-console.log("\n Preço do produto:", produto);
-if (produto < 100) {
-    let inflacao = produto + (produto * 0.1);
-    console.log("Inflação 10%:", inflacao);
-}
+function executarGrupo2Exercicio3() { //funcao para botao
 
-if (produto >= 100) {
-    let inflacao = produto + (produto * 0.2);
-    console.log("Inflação 20%:", inflacao); 
+    const produto = parseFloat(prompt("Digite o preço de um produto:"));
+    console.log("\n Preço do produto:", produto);
+    if (produto < 100) {
+        let inflacao = produto + (produto * 0.1);
+        console.log("Inflação 10%:", inflacao);
+    }
+
+    if (produto >= 100) {
+        let inflacao = produto + (produto * 0.2);
+        console.log("Inflação 20%:", inflacao);
+    }
 }

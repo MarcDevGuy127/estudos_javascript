@@ -6,17 +6,20 @@ Grupo 2 - Controle de Fluxo
     - Se ambos forem iguais, a mensagem "valores iguais".
 */
 
-var pValor = parseInt(prompt("Digite um número:"));
-var sValor = parseInt(prompt("Digite um outro número:"));
+function executarGrupo2Exercicio1() { //funcao para botao
 
-if (pValor < sValor) {
-    for (let i = 0; i <= sValor; i++) {
-        console.log(i);
+    var pValor = parseInt(prompt("Digite um número:"));
+    var sValor = parseInt(prompt("Digite um outro número:"));
+
+    if (pValor < sValor) {
+        for (let i = 0; i <= sValor; i++) {
+            console.log(i);
+        }
+    } else if (pValor > sValor) {
+        for (let i = pValor; i >= sValor; i--) {
+            console.log(i);
+        }
+    } else {
+        console.log("Esses valores são iguais.");
     }
-} else if (pValor > sValor) {
-    for (let i = pValor; i >= sValor; i--) {
-        console.log(i);
-    }
-} else {
-    console.log("Esses valores são iguais.");
 }
